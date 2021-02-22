@@ -18,41 +18,7 @@
       <main class="padding-y-3">
         <div class="flex justify-center margin-bottom-2">
           <div class="width-12 width-6-lg">
-            <div class="text-align-center">
-              <svg
-                class=""
-                viewBox="0 0 40 40"
-                role="img"
-                aria-labelledby="DOGE"
-                height="400"
-                width="400"
-              >
-                <g fill="none">
-                  <path
-                    d="M20 40C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20z"
-                    fill="#FEC95A"
-                  ></path>
-                  <circle
-                    stroke-opacity="1"
-                    stroke="#fff"
-                    cx="20"
-                    cy="20"
-                    r="19.5"
-                  ></circle>
-                  <path
-                    d="M20.092 26.553h-2.986v-5.611h4.478v-2.35h-4.478v-5.611h2.847c1.064 0 6.42.428 6.429 7.043.008 6.615-5.523 6.529-6.29 6.529M19.235 9h-6.192v9.592H10.5v2.349h2.543v9.59h7.215S30.4 31.384 30.4 19.948C30.401 8.697 20.7 9 19.235 9"
-                    fill="#FFF"
-                  ></path>
-                  <circle
-                    stroke-opacity="0.02"
-                    stroke="#000"
-                    cx="20"
-                    cy="20"
-                    r="19.5"
-                  ></circle>
-                </g>
-              </svg>
-            </div>
+            <div class="text-align-center"></div>
           </div>
         </div>
         <div id="widget" class="">
@@ -60,7 +26,41 @@
             <div class="width-12 width-6-lg">
               <div class="flex border-radius bg-white box-shadow">
                 <div class="width-12">
-                  <div class="padding-1 text-align-center">
+                  <div class="padding-2 text-align-center">
+                    <svg
+                      class=""
+                      viewBox="0 0 40 40"
+                      role="img"
+                      aria-labelledby="DOGE"
+                      height="400"
+                      width="400"
+                    >
+                      <g fill="none">
+                        <path
+                          d="M20 40C8.954 40 0 31.046 0 20S8.954 0 20 0s20 8.954 20 20-8.954 20-20 20z"
+                          fill="#FEC95A"
+                        ></path>
+                        <circle
+                          stroke-opacity="1"
+                          stroke="#fff"
+                          cx="20"
+                          cy="20"
+                          r="19.5"
+                        ></circle>
+                        <path
+                          d="M20.092 26.553h-2.986v-5.611h4.478v-2.35h-4.478v-5.611h2.847c1.064 0 6.42.428 6.429 7.043.008 6.615-5.523 6.529-6.29 6.529M19.235 9h-6.192v9.592H10.5v2.349h2.543v9.59h7.215S30.4 31.384 30.4 19.948C30.401 8.697 20.7 9 19.235 9"
+                          fill="#FFF"
+                        ></path>
+                        <circle
+                          stroke-opacity="0.02"
+                          stroke="#000"
+                          cx="20"
+                          cy="20"
+                          r="19.5"
+                        ></circle>
+                      </g>
+                    </svg>
+                    <br />
                     <span class="font-weight-700">Dogecoin</span>
                     <span id="date" class="color-muted"></span>
                   </div>
@@ -80,8 +80,8 @@
                           fill="#FFB800"
                         ></path>
                         <circle
-                          stroke-opacity="0.5"
-                          stroke="#F08A0C"
+                          stroke-opacity="1"
+                          stroke="#fff"
                           cx="20"
                           cy="20"
                           r="19.5"
@@ -138,7 +138,7 @@
         const currencyUSDContainer = document.querySelector("#currencyUSD");
         currencyUSDContainer.innerText = DogeAsUsd;
       }
-      conversion();
+      // conversion();
       const currentDate = new Date();
       const d = ("0" + currentDate.getDate()).slice(-2);
       const m = ("0" + (currentDate.getMonth() + 1)).slice(-2);
